@@ -1,0 +1,5 @@
+data:
+  raw_path: "data/raw/animals_dataset"
+  processed_path: "data/processed/splited_dataset"
+  test_size: 0.2
+  val_size: 0.1
