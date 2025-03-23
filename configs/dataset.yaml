@@ -1,5 +1,5 @@
 data:
-  raw_path: "data/raw/animals_dataset"
-  processed_path: "data/processed/splited_dataset"
+  raw_path: "/home/nhattan05022003/coding/Personal/Basic_learning/CNN/Animals_project/data/raw"
+  processed_path: "/home/nhattan05022003/coding/Personal/Basic_learning/CNN/Animals_project/data/processed"
   test_size: 0.2
   val_size: 0.1

@@ -6,7 +6,10 @@ from torch.utils.data import DataLoader
 import torch.optim as optim
 from torch.optim import lr_scheduler
 import yaml
-from models.model import AnimalClassifier
+import sys
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_root)
+from any_models.model import AnimalClassifier
 from utils.data_utils import AnimalsDataset
 from utils.transforms import get_transforms
 from utils.logging import setup_logging, close_logging
