@@ -1,4 +1,3 @@
-# scripts/evaluate.py
 import os
 import torch
 import torch.nn as nn
@@ -6,7 +5,7 @@ from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 from utils.data_utils import AnimalsDataset
 from utils.transforms import get_transforms
-from models.model import AnimalClassifier
+from any_models.model import AnimalClassifier
 import yaml
 
 def evaluate_model():

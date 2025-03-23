@@ -4,9 +4,9 @@ import torch
 from PIL import Image
 import argparse
 from utils.transforms import get_transforms
-from models.model import AnimalClassifier
+from any_models.model import AnimalClassifier
 import yaml
-
+from utils.data_utils import AnimalsDataset
 def inference(image_path):
     # Load config
     with open('configs/dataset.yaml', 'r') as f:

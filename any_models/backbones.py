@@ -1,4 +1,3 @@
-# models/backbone.py
 import torch.nn as nn
 from .resnet import resnet18, resnet34, resnet50
 from .inceptionnet import inception_v1
@@ -6,12 +5,12 @@ from .efficientnet import efficientnet_b0
 from .mobilenet import mobilenet_v2
 
 class Backbone(nn.Module):
-    def __init__(self, backbone_name='resnet50', pretrained=True):  # Thêm pretrained
+    def __init__(self, backbone_name='resnet50', pretrained=True): 
         super(Backbone, self).__init__()
         self.backbone_name = backbone_name.lower()
         
         if self.backbone_name == 'resnet18':
-            self.model = resnet18(pretrained=pretrained)  # Thêm pretrained
+            self.model = resnet18(pretrained=pretrained)  
             self.feature_dim = 512
         elif self.backbone_name == 'resnet34':
             self.model = resnet34(pretrained=pretrained)
@@ -43,5 +42,5 @@ class Backbone(nn.Module):
     def get_feature_dim(self):
         return self.feature_dim
 
-def get_backbone(backbone_name='resnet50', pretrained=True):  # Thêm pretrained
+def get_backbone(backbone_name='resnet50', pretrained=True): 
     return Backbone(backbone_name, pretrained)

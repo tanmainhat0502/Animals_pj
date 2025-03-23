@@ -1,4 +1,3 @@
-# scripts/train.py
 import os
 import torch
 import torch.nn as nn
@@ -18,7 +17,7 @@ def train():
     # Load configs
     with open('configs/dataset.yaml', 'r') as f:
         dataset_config = yaml.safe_load(f)
-    with open('configs/hyperparameters.yaml', 'r') as f:  # Đổi tên file config
+    with open('configs/hyperparameters.yaml', 'r') as f:  
         hyperparam_config = yaml.safe_load(f)
     
     # Setup logging

@@ -1,4 +1,3 @@
-# models/model.py
 import torch.nn as nn
 import sys
 import os
