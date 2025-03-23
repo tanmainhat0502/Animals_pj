@@ -1,5 +1,10 @@
 data/
-checkpoints/ 
+checkpoints/
 logs/
-testing.py
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
