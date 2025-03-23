@@ -14,27 +14,10 @@ This project is a deep learning framework for classifying animal images using va
   - Inference on single images.
 
 ## Project Structure
-Animals_pj/
-├── configs/                 
-│   ├── dataset.yaml         
-│   ├── transforms.yaml     
-│   ├── hyperparameters.yaml 
-├── data/                  
-│   ├── raw/               
-│   ├── processed/
-├── models
-│   ├── backbones.py
-│   ├── efficientnet.py
-│   ├── inceptionnet.py
-│   ├── mobilenet.py
-│   ├── model.py
-│   └── resnet.py
-├── scripts
-│   ├── evaluate.py
-│   ├── inference.py
-│   ├── prepare_data.py
-│   └── train.py
-└── utils
-    ├── data_utils.py
-    ├── logging.py
-    └── transforms.py
+
+Animals_pj/ ├── configs/
+│ ├── dataset.yaml
+│ ├── transforms.yaml
+│ ├── hyperparameters.yaml ├── data/
+│ ├── raw/
+│ ├── processed/ ├── models/ │ ├── backbones.py │ ├── efficientnet.py │ ├── inceptionnet.py │ ├── mobilenet.py │ ├── model.py │ ├── resnet.py ├── scripts/ │ ├── evaluate.py │ ├── inference.py │ ├── prepare_data.py │ ├── train.py └── utils/ ├── data_utils.py ├── logging.py └── transforms.py
